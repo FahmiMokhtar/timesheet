@@ -1,0 +1,24 @@
+<table class="timesheet-table">
+    <thead>
+        <tr class="timesheet-table-header">
+            <th class="header-col tcol1">Project</th>
+            <th class="header-col tcol2">Task</th> 
+            <th class="header-col tcol3">Assigned To</th>    
+            <th class="header-col tcol4">From</th>  
+            <th class="header-col tcol5">To</th>  
+            <th class="header-col tcol6">Status</th>  
+            <th class="header-col tcol7"></th>        
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="timesheet-table-body" *ngFor="let timesheetInfo of timeshetResult">
+            <td class="tcol1">{{ timesheetInfo.project }}</td>
+            <td class="tcol2">{{ timesheetInfo.task }}</td>
+            <td class="tcol3">{{ timesheetInfo.assignto }}</td>
+            <td class="tcol4">{{ timesheetInfo.from }}</td>
+            <td class="tcol5">{{ timesheetInfo.to }}</td>
+            <td class="tcol6">{{ timesheetInfo.status }}</td>
+            <td class="tcol7"><i class='fa fa-edit' (click)="editRecord(timesheetInfo);" ></i> &nbsp; <i class='fa fa-trash' (click)="deleteRecord(timesheetInfo);"></i></td>
+        </tr>
+    </tbody>
+</table>

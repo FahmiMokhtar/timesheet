@@ -1,0 +1,47 @@
+dialog.timesheet-dialog{
+    width: 640px;
+    height: 320px;
+}
+
+div.timesheet-area{
+    width: 50%;
+}
+
+div.area-left{
+    float: left;
+}
+
+div.area-right{
+    margin-left: 50%;
+}
+
+div.timesheet-form-element{
+    margin: 0 10px 20px 0;
+    min-height: 23px;
+}
+
+div.timesheet-form-button-left{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+div.timesheet-form-button-right{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+div.timesheet-form-element-label{
+    max-width: 30%;
+    float: left;
+}
+
+div.timesheet-form-element-control{
+    max-width: 70%;
+    margin-left: 30%;
+}
+
+.timesheet-edit-textbox {
+    width: 80%;
+    border-style: solid;
+}

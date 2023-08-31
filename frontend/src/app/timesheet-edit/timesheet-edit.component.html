@@ -1,0 +1,50 @@
+<dialog class="timesheet-dialog" #appDialog>
+  <div class="timesheet-header"><h3>Timesheet Entry</h3></div>
+  <div class="timesheet-area area-left">
+
+    <div class="timesheet-form-element">
+      <div class="timesheet-form-element-label">Project</div>
+      <div class="timesheet-form-element-control"><input class="timesheet-edit-textbox" type="text" [(ngModel)]="timesheet.project" /> </div>
+    </div>
+
+    <div class="timesheet-form-element">
+      <div class="timesheet-form-element-label">Task</div>
+      <div class="timesheet-form-element-control"><input class="timesheet-edit-textbox" type="text" [(ngModel)]="timesheet.task" /> </div>
+    </div>
+
+    <div class="timesheet-form-element">
+      <div class="timesheet-form-element-label">Date From</div>
+      <div class="timesheet-form-element-control"><input class="timesheet-edit-textbox" type="date" [(ngModel)]="timesheet.datefrom" /> </div>
+    </div>
+     
+    <div class="timesheet-form-element">
+      <div class="timesheet-form-element-label">Status</div>
+      <div class="timesheet-form-element-control"><app-timesheet-edit-select-status [statusid]="timesheet.statusid" (statusidChangeEvent)="updateStatusId($event)"></app-timesheet-edit-select-status></div>
+    </div>
+
+    <div class="timesheet-form-element">
+      <div class="timesheet-form-element-label">Assign To</div>
+      <div class="timesheet-form-element-control"><app-timesheet-edit-select-user [userid]="timesheet.userid" (useridChangeEvent)="updateUserId($event)"></app-timesheet-edit-select-user></div>
+    </div>
+
+    <div class="timesheet-form-element">
+      <div class="timesheet-form-element-label"><button (click)="dialogSave()">Save</button></div>
+      <div class="timesheet-form-element-control"><button (click)="dialogClose()">Close</button></div>
+    </div>
+  </div>
+
+  <div class="timesheet-area area-right">
+    <div class="timesheet-form-element">&nbsp;</div>
+    <div class="timesheet-form-element">&nbsp;</div>
+    <div class="timesheet-form-element"><div class="timesheet-form-element">
+      <div class="timesheet-form-element-label">Date To</div>
+      <div class="timesheet-form-element-control"><input class="timesheet-edit-textbox" type="date" [(ngModel)]="timesheet.dateto"  /> </div>
+    </div></div>
+    <div class="timesheet-form-element">&nbsp;</div>
+    <div class="timesheet-form-element">&nbsp;</div>
+    <div class="timesheet-form-button-right">
+      
+    </div>
+  </div>
+    
+</dialog>

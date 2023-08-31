@@ -1,0 +1,21 @@
+table.timesheet-table{
+    width: 100%;
+}
+
+tr.timesheet-table-header {
+    height: 30px;
+    vertical-align:middle;
+    text-align: left;
+}
+
+tr.timesheet-table-header  > th, tr.timesheet-table-body  > td{
+    padding: 5px 2px 5px 5px;
+}
+
+th.tcol1 {width: 15%;}
+th.tcol2 {width: 15%;}
+th.tcol3 {width: 20%;}
+th.tcol4 {width: 15%;}
+th.tcol5 {width: 14%;}
+th.tcol6 {width: 14%;}
+th.tcol7 {width: 7%;}

@@ -1,0 +1,16 @@
+<div class="timesheet-header"><h3>Timesheet Entries</h3></div>
+<div class="timesheet-main-search">
+
+    <div class="searchbox-container"> Task&nbsp;&nbsp;
+        <input class="timesheet-textbox" type="text" [(ngModel)]="searchString"  /> 
+        <br>
+        <br>
+        <button (click)="searchByTask()">Search</button>&nbsp;&nbsp;<button (click)="showDialog()">Create</button>
+    </div>
+
+</div>
+<div class="timesheet-main-result"><app-timesheet-table [timeshetResult]="timesheetInfos" (editClick)="executeEdit($event)" (deleteClick)="executeDelete($event)"></app-timesheet-table></div>
+<app-timesheet-edit [timesheet]="timesheetEdit" (dialogClosing)="executeSearch($event)"></app-timesheet-edit>
+
+
+

@@ -1,0 +1,3 @@
+<select [(ngModel)]="userid" (change)="updateUserId($event)" class="timesheet-edit-textbox">
+    <option *ngFor="let user of users"  [value]="user.id" >{{ user.name }}</option>
+</select>

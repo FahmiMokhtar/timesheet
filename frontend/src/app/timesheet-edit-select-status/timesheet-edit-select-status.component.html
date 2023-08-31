@@ -1,0 +1,3 @@
+<select [(ngModel)]="statusid" (change)="updateStatusId($event)" class="timesheet-edit-textbox">
+    <option *ngFor="let status of statuses" [value]="status.id" >{{ status.description }}</option>
+</select>

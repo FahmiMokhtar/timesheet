@@ -1,0 +1,20 @@
+div.timesheet-header {margin-bottom: 30px;}
+
+div.timesheet-main-search { 
+    border-style: solid; 
+    vertical-align: middle; 
+    text-align: center; 
+    margin-bottom: 30px;
+}
+
+div.searchbox-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.timesheet-textbox {
+    width: 300px;
+    border-style: solid;
+}
+
+div.timesheet-main-result {border-style: solid; margin-bottom: 30px;}
